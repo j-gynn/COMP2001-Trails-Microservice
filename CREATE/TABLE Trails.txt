@@ -1,0 +1,8 @@
+CREATE TABLE Trails (
+    TID INT NOT NULL PRIMARY KEY,
+    UserID INT,
+    TName VARCHAR(255),
+    TDesc TEXT NULL,
+    TDiff INT CHECK(TDiff BETWEEN 1 AND 5),
+    TType INT NOT NULL
+)
